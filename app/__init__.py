@@ -29,6 +29,7 @@ def create_app():
     "https://studysmarterfrontend.vercel.app",  
     "https://studysmarterfrontend-fsvdw7s1k-parisqiu1s-projects.vercel.app",
     "https://my-new-frontend-2v5h.vercel.app"
+    "my-new-frontend-mhf3.vercel.app"
     
 ])
 
