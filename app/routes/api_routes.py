@@ -2,7 +2,7 @@
 from flask import Blueprint
 from app.controllers.auth_controller import signup, login_user, logout_user
 from app.controllers.user_controller import get_users
-from app.controllers.study_room_controller import create_study_room, get_study_room, get_all_study_rooms, update_study_room
+from app.controllers.study_room_controller import create_study_room, get_study_room, get_all_study_rooms, update_study_room, delete_study_room
 from app.controllers.post_controller import create_post
 from app.controllers.comment_controller import create_comment
 from app.controllers.media_controller import upload_media
@@ -29,6 +29,7 @@ api_bp.route('/study_rooms', methods=['POST'])(create_study_room)
 api_bp.route('/study_rooms', methods=['GET'])(get_all_study_rooms)
 api_bp.route('/study_rooms/<int:id>', methods=['GET'])(get_study_room)
 api_bp.route('/study_rooms/<int:id>', methods=['PUT'])(update_study_room)
+api_bp.route('/study_rooms/<int:id>', methods=['DELETE'])(delete_study_room)
 
 # --------------------------
 # Post Routes
